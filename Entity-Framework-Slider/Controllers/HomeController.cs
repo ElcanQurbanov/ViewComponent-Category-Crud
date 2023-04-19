@@ -17,14 +17,17 @@ namespace Entity_Framework_Slider.Controllers
 		private readonly AppDbContext _context;
 		private readonly IBasketService _basketService;
 		private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
         public HomeController(AppDbContext context,
 			                  IBasketService basketService,
-                              IProductService productService)
+                              IProductService productService,
+							  ICategoryService categoryService)
         {
 			_context = context;
 			_basketService = basketService;
 			_productService = productService;
+			_categoryService = categoryService;
         }
 
 
@@ -47,11 +50,11 @@ namespace Entity_Framework_Slider.Controllers
 
 
 
-			List<Slider> sliders = await _context.Sliders.ToListAsync();
+			//List<Slider> sliders = await _context.Sliders.ToListAsync();
 
-            SliderInfo? sliderInfo = await _context.SliderInfos.FirstOrDefaultAsync();
+			//SliderInfo? sliderInfo = await _context.SliderInfos.FirstOrDefaultAsync();
 
-			IEnumerable<Category> categories = await _context.Categories.Where(m => !m.SoftDelete).ToListAsync();
+			IEnumerable<Category> categories = await _categoryService.GetAll();
 
 			IEnumerable<Product> products = await _productService.GetAll();
 
@@ -76,8 +79,8 @@ namespace Entity_Framework_Slider.Controllers
 
 			HomeVM model = new()
 			{
-				Sliders = sliders,
-				SliderInfo = sliderInfo,
+				//Sliders = sliders,
+				//SliderInfo = sliderInfo,
 				Categories = categories,
 				Products = products,
 				Advantages = advantages,

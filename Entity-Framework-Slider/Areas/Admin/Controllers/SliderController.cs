@@ -20,5 +20,31 @@ namespace Entity_Framework_Slider.Areas.Admin.Controllers
             IEnumerable<Slider> sliders = await _context.Sliders.Where(m=>!m.SoftDelete).ToListAsync();
             return View(sliders);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null) return BadRequest();
+            Slider? slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (slider is null) return NotFound();
+            return View(slider);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null) return BadRequest();
+            Slider? slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (slider is null) return NotFound();
+            return View(slider);
+        }
     }
 }

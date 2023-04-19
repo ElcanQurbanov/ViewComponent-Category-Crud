@@ -25,6 +25,9 @@ namespace Entity_Framework_Slider.Data
             modelBuilder.Entity<Product>().HasQueryFilter(m => !m.SoftDelete);
             modelBuilder.Entity<Blog>().HasQueryFilter(m => !m.SoftDelete);
             modelBuilder.Entity<BlogHeader>().HasQueryFilter(m => !m.SoftDelete);
+            modelBuilder.Entity<Category>().HasQueryFilter(m => !m.SoftDelete);
+            modelBuilder.Entity<Slider>().HasQueryFilter(m => !m.SoftDelete);
+            modelBuilder.Entity<SliderInfo>().HasQueryFilter(m => !m.SoftDelete);
 
             modelBuilder.Entity<Setting>()
                    .HasData(

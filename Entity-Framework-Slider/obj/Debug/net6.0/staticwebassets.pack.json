@@ -4425,6 +4425,10 @@
       "PackagePath": "staticwebassets\\admin\\src\\scss\\widgets\\widgets.scss"
     },
     {
+      "Id": "C:\\Users\\cavid\\Desktop\\Asp.net\\Homework3\\Entity-Framework-Slider\\Entity-Framework-Slider\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
       "Id": "C:\\Users\\cavid\\Desktop\\Asp.net\\Homework3\\Entity-Framework-Slider\\Entity-Framework-Slider\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },

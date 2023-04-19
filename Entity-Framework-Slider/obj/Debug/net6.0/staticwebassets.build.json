@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XvQKKg7SVyUOQtedrAVhVLdZDdd4nwyadC2kINBe0JM=",
+  "Hash": "UjqERD8ccPdjxWHaeWl8y8Wcq+IbM7YDX4spn6cp34g=",
   "Source": "Entity-Framework-Slider",
   "BasePath": "_content/Entity-Framework-Slider",
   "Mode": "Default",
@@ -18834,6 +18834,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\src\\scss\\widgets\\widgets.scss"
+    },
+    {
+      "Identity": "C:\\Users\\cavid\\Desktop\\Asp.net\\Homework3\\Entity-Framework-Slider\\Entity-Framework-Slider\\wwwroot\\css\\main.css",
+      "SourceId": "Entity-Framework-Slider",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cavid\\Desktop\\Asp.net\\Homework3\\Entity-Framework-Slider\\Entity-Framework-Slider\\wwwroot\\",
+      "BasePath": "_content/Entity-Framework-Slider",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
       "Identity": "C:\\Users\\cavid\\Desktop\\Asp.net\\Homework3\\Entity-Framework-Slider\\Entity-Framework-Slider\\wwwroot\\css\\style.css",
